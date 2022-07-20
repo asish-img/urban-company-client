@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import SearchBar from './components/SearchBar';
+import Background from './components/Background';
+import Dropdown from './components/Dropdown';
+import Search from './components/Search';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			{/* <SearchBar /> */}
+			{/* <Form /> */}
+			{/* <Search1 /> */}
+			<Background />
+			{/* <Dropdown /> */}
+			{/* <Search /> */}
+		</div>
+	);
 }
 
 export default App;
