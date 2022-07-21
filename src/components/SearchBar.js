@@ -5,9 +5,6 @@ import {
 	TextField,
 	Typography,
 	Box,
-	InputLabel,
-	MenuItem,
-	Select,
 	InputAdornment,
 	FormControl,
 	Link,
@@ -19,10 +16,6 @@ import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 
-// import SearchIcon from '@mui/icons-material/Search';
-import Dropdown from './Dropdown';
-import Search from './Search';
-// import { width } from '@mui/system';
 
 const SearchBar = () => {
 	const [show, setShow] = React.useState(false);
