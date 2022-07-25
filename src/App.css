@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(FontsFree-Net-sddd4.ttf);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
