@@ -16,7 +16,6 @@ import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 
-
 const SearchBar = () => {
 	const [show, setShow] = React.useState(false);
 
@@ -57,7 +56,11 @@ const SearchBar = () => {
 					}}
 				>
 					<Grid item xs={2.5}>
-						<FormControl fullWidth sx={{ position: 'relative' }}>
+						<FormControl
+							fullWidth
+							sx={{ position: 'relative' }}
+							className="search-1"
+						>
 							{/* <Dropdown /> */}
 							<Box sx={{ position: 'absolute', top: '-25px' }}>
 								<div className="select" onClick={handleClick}>
@@ -111,7 +114,7 @@ const SearchBar = () => {
 											<Divider />
 											<div>
 												<div className="pop-searchbox">
-													<TextField
+													{/* <TextField
 														id="outlined-textarea"
 														placeholder="search for services"
 														fullWidth
@@ -126,7 +129,29 @@ const SearchBar = () => {
 																</InputAdornment>
 															),
 														}}
-													/>
+													/> */}
+													<Box
+														sx={{
+															height: '54px',
+															display: 'flex',
+															justifyContent: 'center',
+															alignItems: 'center',
+															borderRadius: '4px',
+															backgroundColor: 'white',
+															marginBottom: '18px',
+														}}
+														className="search-2"
+													>
+														<span>
+															<SearchIcon
+																sx={{ color: '#757575', padding: '20px' }}
+															/>
+														</span>
+														<input
+															class="topSearchBox"
+															placeholder="Home services, on demand."
+														/>
+													</Box>
 												</div>
 											</div>
 										</div>
@@ -149,6 +174,7 @@ const SearchBar = () => {
 								backgroundColor: 'white',
 								marginBottom: '18px',
 							}}
+							className="search-2"
 						>
 							<span>
 								<SearchIcon sx={{ color: '#757575', padding: '20px' }} />

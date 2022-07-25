@@ -6,7 +6,10 @@ const Background = () => {
 		<Box
 			sx={{
 				backgroundImage:
-					'url(https://images.unsplash.com/photo-1657555456661-e2855cc4a2f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80)',
+					'url(https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg)',
+				backgroundSize: ' cover',
+				backgroundRepeat: 'no-repeat',
+				backgroundPosition: ' center',
 			}}
 		>
 			<SearchBar />
