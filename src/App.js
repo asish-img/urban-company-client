@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Background from './components/Background';
+import SalonSpaAndMassageServices from './components/Categories/SalonSpaAndMassageServices';
+import CleaningAndPestControl from './components/Categories/CleaningAndPestControl';
+import UcLuxuryExperience from './components/Categories/UcLuxuryExperience';
+import HomeRepairs from './components/Categories/HomeRepairs';
+import Appliances from './components/Categories/Appliances';
+import BestOffers from './components/Categories/BestOffers';
+import NewCategoryLaunches from './components/NewCategoryLaunches';
+import TopOfferSlide from './components/Categories/TopOfferSlide';
+import CurrentLocation from './components/CurrentLocation';
+import Search from './components/Search';
+import SearchBar from './components/SearchBar';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Background />
+			{/*<TopOfferSlide />
+			<NewCategoryLaunches />
+			<BestOffers />
+			<Appliances />
+			<SalonSpaAndMassageServices />
+			<CleaningAndPestControl />
+			<UcLuxuryExperience />
+			<HomeRepairs /> */}
+			{/* <CurrentLocation /> */}
+			{/* <Search /> */}
+			{/* <SearchBar /> */}
+		</div>
+	);
 }
 
 export default App;
