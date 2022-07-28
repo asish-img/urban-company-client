@@ -9,19 +9,24 @@ import Appliances from './components/Categories/Appliances';
 import BestOffers from './components/Categories/BestOffers';
 import NewCategoryLaunches from './components/NewCategoryLaunches';
 import TopOfferSlide from './components/Categories/TopOfferSlide';
-
+import CurrentLocation from './components/CurrentLocation';
+import Search from './components/Search';
+import SearchBar from './components/SearchBar';
 function App() {
 	return (
 		<div className="App">
 			<Background />
-			<TopOfferSlide />
+			{/*<TopOfferSlide />
 			<NewCategoryLaunches />
 			<BestOffers />
 			<Appliances />
 			<SalonSpaAndMassageServices />
 			<CleaningAndPestControl />
 			<UcLuxuryExperience />
-			<HomeRepairs />
+			<HomeRepairs /> */}
+			{/* <CurrentLocation /> */}
+			{/* <Search /> */}
+			{/* <SearchBar /> */}
 		</div>
 	);
 }

@@ -118,15 +118,17 @@ body {
 .current-location {
 	width: 142px;
 	height: 20px;
-	/* height: 20px; */
 	color: #0f0f0f;
-	/* width: 142px; */
 	font-size: 14px;
-	/* margin: 18px 0 18px 48px; */
-	font-weight: 400;
+	font-weight: 500;
+	text-align: start;
+	line-height: 40px;
 }
 .location-con {
 	flex: 1;
+	display: flex;
+	justify-content: center;
+	margin-left: 10px;
 }
 .gps-con {
 	flex: 1;
@@ -156,6 +158,8 @@ body {
 }
 .gps {
 	cursor: pointer;
+}
+.searchBox::before {
 }
 
 @media screen and (max-width: 868px) {

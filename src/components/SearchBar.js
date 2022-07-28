@@ -15,16 +15,64 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import SearchIcon from '@mui/icons-material/Search';
+import Search from './Search';
 
 const SearchBar = () => {
-	const [show, setShow] = React.useState(false);
+	// const [show, setShow] = React.useState(false);
 
-	const handleClick = (event) => {
-		setShow(!show);
-	};
+	// const [latitude, setLatitude] = React.useState('');
+	// const [longitude, setLongitude] = React.useState('');
+	// const [currentLocation, setCurrentLocation] = React.useState('');
+	// const geoUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}longitude=${longitude}&localityLanguage=en`;
+
+	// async function postData(url = '') {
+	// 	// Default options are marked with *
+	// 	const response = await fetch(url);
+	// 	return response.json(); // parses JSON response into native JavaScript objects
+	// }
+
+	// const getGeoLocation = (e) => {
+	// 	console.log('geo');
+	// 	// React.useEffect(() => {
+	// 	navigator.geolocation.getCurrentPosition((position) => {
+	// 		console.log(position.coords);
+	// 		setLatitude(position.coords.latitude);
+	// 		setLongitude(position.coords.longitude);
+
+	// 		postData(geoUrl).then((data) => {
+	// 			console.log(data); // JSON data parsed by `data.json()` call
+	// 			setCurrentLocation(data.principalSubdivision);
+	// 		});
+	// 	});
+	// 	// }, []);
+	// };
+
+	// const handleClick = (event) => {
+	// 	setShow(!show);
+	// 	console.log(show);
+	// };
+
+	// const handleBodyClick = (event) => {
+	// 	console.log(event.type);
+	// 	if (
+	// 		event.type === 'keydown' ||
+	// 		event.type === 'focus' ||
+	// 		event.type === 'change'
+	// 	) {
+	// 		setShow(false);
+	// 	} else {
+	// 		return;
+	// 	}
+	// };
 
 	return (
-		<Box sx={{ height: '100vh', display: 'flex', justifyContent: 'center' }}>
+		<Box
+			sx={{ height: '100vh', display: 'flex', justifyContent: 'center' }}
+			// onClick={handleBodyClick}
+			// onFocus={handleBodyClick}
+			// onKeyDown={handleBodyClick}
+			// onChange={handleBodyClick}
+		>
 			<Box sx={{ width: '936px' }}>
 				<Box>
 					<Box component="ol" className="breadcrumb">
@@ -46,146 +94,7 @@ const SearchBar = () => {
 				>
 					Home services, on demand.
 				</Typography>
-				<Grid
-					container
-					spacing={2}
-					sx={{
-						display: 'flex',
-						alignItems: ' center',
-						justifyContent: 'center',
-					}}
-				>
-					<Grid item xs={2.5}>
-						<FormControl
-							fullWidth
-							sx={{ position: 'relative' }}
-							className="search-1"
-						>
-							{/* <Dropdown /> */}
-							<Box sx={{ position: 'absolute', top: '-25px' }}>
-								<div className="select" onClick={handleClick}>
-									<img
-										src="https://images.urbanclap.com/image/upload//q_auto,f_auto,fl_progressive:steep/t_medium_res_template/v1514444369/Flag_of_India_28Dec2017-1.png"
-										alt="flag"
-										className="flag"
-									/>
-									<span className="city">Delhi-Ncr</span>
-									<span>
-										<span clssName="arrowIcon">
-											<ArrowDropDownIcon
-												sx={{ color: '#646464', fontSize: '30px' }}
-											/>
-										</span>
-									</span>
-								</div>
-								{show ? (
-									<div class="wrapper">
-										<div class="wrapper">
-											<span class="tri"> </span>
-											<div className="pop-container">
-												<div className="location-con">
-													<span>
-														<FmdGoodOutlinedIcon
-															sx={{
-																color: '#646464',
-																width: '18px',
-																height: '18px',
-																padding: '0 5px',
-															}}
-														/>
-													</span>
-													<span className="current-location">
-														Current Location
-													</span>
-												</div>
-												<div className="gps-con">
-													<span className="gps">Detect Using GPS</span>
-													<span>
-														<ArrowForwardIosOutlinedIcon
-															sx={{
-																color: '#646464',
-																width: '10px',
-																height: '10px',
-															}}
-														/>
-													</span>
-												</div>
-											</div>
-											<Divider />
-											<div>
-												<div className="pop-searchbox">
-													{/* <TextField
-														id="outlined-textarea"
-														placeholder="search for services"
-														fullWidth
-														sx={{
-															backgroundColor: '#ffffff',
-															borderRadius: '4px',
-														}}
-														InputProps={{
-															startAdornment: (
-																<InputAdornment position="start">
-																	<SearchIcon />
-																</InputAdornment>
-															),
-														}}
-													/> */}
-													<Box
-														sx={{
-															height: '54px',
-															display: 'flex',
-															justifyContent: 'center',
-															alignItems: 'center',
-															borderRadius: '4px',
-															backgroundColor: 'white',
-															marginBottom: '18px',
-														}}
-														className="search-2"
-													>
-														<span>
-															<SearchIcon
-																sx={{ color: '#757575', padding: '20px' }}
-															/>
-														</span>
-														<input
-															class="topSearchBox"
-															placeholder="Home services, on demand."
-														/>
-													</Box>
-												</div>
-											</div>
-										</div>
-									</div>
-								) : null}
-							</Box>
-						</FormControl>
-					</Grid>
-					<Grid item xs={7.5}>
-						{/* <Search /> */}
-						<Box
-							sx={{
-								width: '588px',
-								height: '54px',
-								// border: '1px solid white',
-								display: 'flex',
-								justifyContent: 'center',
-								alignItems: 'center',
-								borderRadius: '4px',
-								backgroundColor: 'white',
-								marginBottom: '18px',
-							}}
-							className="search-2"
-						>
-							<span>
-								<SearchIcon sx={{ color: '#757575', padding: '20px' }} />
-							</span>
-							<input
-								class="topSearchBox"
-								placeholder="Home services, on demand."
-							/>
-						</Box>
-					</Grid>
-				</Grid>
+				<Search />
 				<Box>
 					<Box component="div" display="inline">
 						<Link
