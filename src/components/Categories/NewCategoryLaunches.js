@@ -1,5 +1,6 @@
 import React from 'react';
-import CategoryBarWithoutSlide from './Categories/CategoryBarWithoutSlide';
+import CategoryBarWithoutSlide from './CategoryBarWithoutSlide';
+// import CategoryBarWithoutSlide from './Categories/CategoryBarWithoutSlide';
 
 const NewCategoryLaunches = () => {
 	const heading = {

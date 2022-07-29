@@ -6,13 +6,13 @@ const CategoryBarWithoutSlide = (props) => {
 	// const data = props.data;
 	const [propData, setPropData] = React.useState([]);
 
-	// console.log('>>>>', props.data);
+	// console.log('>>>>', props.data , props.heading);
 	useEffect(() => {
 		if (props.data) {
 			setPropData(props.data);
 		}
 	}, [props.data]);
-	console.log(propData);
+	// console.log("#########",propData);
 
 	return (
 		<Box
@@ -80,6 +80,7 @@ const CategoryBarWithoutSlide = (props) => {
 										sx={{
 											width: '293px',
 											height: '229px',
+											backgroundColor : 'yellowgreen',
 											paddingTop: '16px',
 											display: 'flex',
 											alignItems: 'center',
@@ -94,12 +95,14 @@ const CategoryBarWithoutSlide = (props) => {
 												alignItems: 'center',
 												justifyContent: 'start',
 												flexDirection: 'column',
+												backgroundColor: 'yellow'
 											}}
 										>
 											<Box
 												sx={{
 													width: '266px',
 													height: '149px',
+											
 												}}
 											>
 												<Box
@@ -109,6 +112,7 @@ const CategoryBarWithoutSlide = (props) => {
 														width: '100%',
 														borderRadius: '4px',
 														cursor: 'pointer',
+													
 													}}
 													alt="The house from the offer."
 													src={obj.link}
@@ -124,6 +128,7 @@ const CategoryBarWithoutSlide = (props) => {
 														color: '#212121',
 														textAlign: ' center',
 														height: '20px',
+														
 													}}
 												>
 													{obj.title}

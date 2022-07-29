@@ -7,26 +7,29 @@ import UcLuxuryExperience from './components/Categories/UcLuxuryExperience';
 import HomeRepairs from './components/Categories/HomeRepairs';
 import Appliances from './components/Categories/Appliances';
 import BestOffers from './components/Categories/BestOffers';
-import NewCategoryLaunches from './components/NewCategoryLaunches';
+import NewCategoryLaunches from './components/Categories/NewCategoryLaunches';
 import TopOfferSlide from './components/Categories/TopOfferSlide';
 import CurrentLocation from './components/CurrentLocation';
-import Search from './components/Search';
+// import Search from './components/Search';
 import SearchBar from './components/SearchBar';
+import Footer from './components/Categories/Footer';
+
 function App() {
 	return (
 		<div className="App">
 			<Background />
-			{/*<TopOfferSlide />
+			<TopOfferSlide />
 			<NewCategoryLaunches />
 			<BestOffers />
 			<Appliances />
 			<SalonSpaAndMassageServices />
 			<CleaningAndPestControl />
 			<UcLuxuryExperience />
-			<HomeRepairs /> */}
-			{/* <CurrentLocation /> */}
+			<HomeRepairs /> 
+			<CurrentLocation />
 			{/* <Search /> */}
-			{/* <SearchBar /> */}
+			 <SearchBar />
+			 <Footer />
 		</div>
 	);
 }

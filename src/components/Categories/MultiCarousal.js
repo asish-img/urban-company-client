@@ -105,7 +105,7 @@ const MultiCarousal = (props) => {
 			>
 				{propData.map((obj) => (
 					<div
-						style={{ width: '266px', height: '213px', margin: '0px 8px' }}
+						style={{ width: '266px', height: '213px', margin: '0px 8px', backgroundColor: 'red',}}
 						key={obj.id}
 					>
 						<Card itemObj={obj} />
@@ -128,6 +128,7 @@ const Card = ({ itemObj }) => {
 					borderRadius: '4px',
 					objectFit: 'cover',
 					cursor: 'pointer',
+					
 				}}
 			/>
 			<p className="imgTitle">{itemObj.title}</p>

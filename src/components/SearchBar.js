@@ -15,7 +15,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import SearchIcon from '@mui/icons-material/Search';
-import Search from './Search';
+import Search from '@mui/icons-material/Search';
+// import Search from './Search';
 
 const SearchBar = () => {
 	// const [show, setShow] = React.useState(false);
