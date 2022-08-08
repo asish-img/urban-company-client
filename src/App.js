@@ -1,35 +1,22 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Index1 from './components/Blog/Index1';
+import Components from './components/Components';
+import Index2 from './components/Therpaies.js/Index2';
 
-import Background from './components/Background';
-import SalonSpaAndMassageServices from './components/Categories/SalonSpaAndMassageServices';
-import CleaningAndPestControl from './components/Categories/CleaningAndPestControl';
-import UcLuxuryExperience from './components/Categories/UcLuxuryExperience';
-import HomeRepairs from './components/Categories/HomeRepairs';
-import Appliances from './components/Categories/Appliances';
-import BestOffers from './components/Categories/BestOffers';
-import NewCategoryLaunches from './components/Categories/NewCategoryLaunches';
-import TopOfferSlide from './components/Categories/TopOfferSlide';
-import CurrentLocation from './components/CurrentLocation';
-// import Search from './components/Search';
-import SearchBar from './components/SearchBar';
-import Footer from './components/Categories/Footer';
+
 
 function App() {
 	return (
 		<div className="App">
-			<Background />
-			<TopOfferSlide />
-			<NewCategoryLaunches />
-			<BestOffers />
-			<Appliances />
-			<SalonSpaAndMassageServices />
-			<CleaningAndPestControl />
-			<UcLuxuryExperience />
-			<HomeRepairs /> 
-			<CurrentLocation />
-			{/* <Search /> */}
-			 <SearchBar />
-			 <Footer />
+			
+			<Routes>
+			     <Route path='/2' element={< Index1/>} />
+				<Route path='/' element={<Components />} />
+				<Route path='/3' element={< Index2 />} />
+			</Routes>
+		
+			
 		</div>
 	);
 }

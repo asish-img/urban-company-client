@@ -1,0 +1,8 @@
+.beautyimg{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    float: left;
+    background-color: red;
+}

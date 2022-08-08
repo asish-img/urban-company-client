@@ -16,6 +16,7 @@ import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import Search from '@mui/icons-material/Search';
+import { NavLink } from 'react-router-dom';
 // import Search from './Search';
 
 const SearchBar = () => {
@@ -98,7 +99,9 @@ const SearchBar = () => {
 				<Search />
 				<Box>
 					<Box component="div" display="inline">
-						<Link
+
+
+						<NavLink  to= {'/3'}
 							sx={{
 								color: '#fff',
 								textDecoration: 'none',
@@ -108,7 +111,7 @@ const SearchBar = () => {
 							href="#"
 						>
 							Women's Therapies,
-						</Link>
+						</NavLink>
 					</Box>
 					<Box component="div" display="inline">
 						<Link
